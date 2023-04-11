@@ -333,7 +333,8 @@ marquee.onmouseover = stopMarquee;
 marquee.onmouseout = startMarquee;
 
 function fetchTextFromDrive(){
-  fetch("https://www.googleapis.com/drive/v3/files/1w3hmHyHZfwtZn63-Xt-VU4Raq-50Ew4TklmYdaXls3k/export?mimeType=text/plain&key=AIzaSyDQNOBtPpgE-tRstclTmyZ8ui7-2T0A7RU")
+  // fetch("https://www.googleapis.com/drive/v3/files/1w3hmHyHZfwtZn63-Xt-VU4Raq-50Ew4TklmYdaXls3k/export?mimeType=text/plain&key=AIzaSyDQNOBtPpgE-tRstclTmyZ8ui7-2T0A7RU")
+  fetch("https://raw.githubusercontent.com/darshandevelopes/ecothon-2.0/master/static/assets/news.txt")
   .then(response => response.text())
   .then(data => {
     // Set the content of the div element to the fetched text
